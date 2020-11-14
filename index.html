@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="generateCats()">Generate Cat</button>
+        <div class="flex-box-container-2" id="flex-box-container-2-id">
+            <!-- <img src="static/images/cat.jpg" height="20%" width="20%"> -->
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id='flex-box-rps-div'>
+            <img src="static/images/rock.png" id="rock" alt="rock" height="150" width="150" onclick="rpsGame(this)">
+            <img src="static/images/paper.png" id="paper" alt="paper" height="150" width="150" onclick="rpsGame(this)">
+            <img src="static/images/scissor.png" id="scissors" alt="scissors" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+        <div>
+            <button class="btn btn-success" onclick="window.location.reload()">Play Again</button>
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2>Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-color-picker">
+            <form action="">
+                <select name="select" id="background" onchange="changeColor(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook</button>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+    border: 1px solid black;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.flex-box-1,
+.flex-box-container-2,
+.flex-box-rps,
+.flex-box-color-picker {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.flex-box-1 div {
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.flex-box-container-2 img {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.flex-box-rps img:hover {
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
